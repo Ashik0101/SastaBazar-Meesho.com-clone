@@ -11,6 +11,7 @@
     />
   </head>
   <link rel="stylesheet" href="./styles/index.css" />
+  <link rel="stylesheet" href="./styles/home.css" />
   <body>
     <nav>
       <div class="logo">
@@ -37,7 +38,7 @@
       <div class="cart">
         <a href="#">
           <i class="fas fa-shopping-cart"></i>
-          <span>0</span>
+          <span id="cart_total_quanity_updater"></span>
         </a>
       </div>
     </nav>
@@ -46,7 +47,7 @@
       <div class="second-navbar-option"><a href="#">Women Ethnic</a></div>
       <div class="second-navbar-option"><a href="#">Women Western</a></div>
       <div class="second-navbar-option"><a href="#">Men</a></div>
-      <div class="second-navbar-option"><a href="#">Kids</a></div>
+      <div class="second-navbar-option"><a href="#">t-shirts</a></div>
       <div class="second-navbar-option"><a href="#">Home & Kitchen</a></div>
       <div class="second-navbar-option"><a href="#">Beuty & Health</a></div>
       <div class="second-navbar-option">
@@ -200,7 +201,130 @@
     <div class="meesho-supplier">
       <a href="#"><img src="./image/meee.png" alt="" /></a>
     </div>
-  </body>
 
+    <!-- the filtering and sorting code here -->
+    <div id="main-container">
+      <div class="options-container">
+        <div class="option category-option">
+          <div>Category</div>
+          <div class="dropdown-btn">
+            <i class="fas fa-angle-down"></i>
+          </div>
+        </div>
+        <div
+          class="sub-option saree-sub-option category_sub_option"
+          id="saree"
+          data-category="saree"
+        >
+          Saree
+        </div>
+        <div
+          class="sub-option watches-sub-option category_sub_option"
+          id="curtains"
+          data-category="curtains"
+        >
+          Curtains
+        </div>
+        <div
+          class="sub-option shoes-sub-option category_sub_option"
+          id="watches"
+          data-category="smart watch"
+        >
+          Watches
+        </div>
+        <div
+          class="sub-option tshirts-sub-option category_sub_option"
+          id="t-shirts"
+          data-category="t-shirt"
+        >
+          t-shirts
+        </div>
+        <div
+          class="sub-option kurtas-sub-option category_sub_option"
+          id="kurtas"
+          data-category="kurtas"
+        >
+          Kurtas
+        </div>
+
+        <div class="option price-option">
+          <div>Price</div>
+          <div class="dropdown-btn">
+            <i class="fas fa-angle-down"></i>
+          </div>
+        </div>
+        <div class="sub-option price-sub-option" data-price="199">
+          199 and above
+        </div>
+        <div class="sub-option price-sub-option" data-price="299">
+          299 and above
+        </div>
+        <div class="sub-option price-sub-option" data-price="399">
+          399 and above
+        </div>
+        <div class="sub-option price-sub-option" data-price="499">
+          499 and above
+        </div>
+        <div class="sub-option price-sub-option" data-price="599">
+          599 and above
+        </div>
+        <div class="sub-option price-sub-option" data-price="699">
+          699 and above
+        </div>
+
+        <div class="option color-option">
+          <div>Color</div>
+          <div class="dropdown-btn">
+            <i class="fas fa-angle-down"></i>
+          </div>
+        </div>
+        <div class="sub-option color-sub-option">Red</div>
+        <div class="sub-option color-sub-option">Blue</div>
+        <div class="sub-option color-sub-option">Orange</div>
+        <div class="sub-option color-sub-option">Yellow</div>
+        <div class="sub-option color-sub-option">Green</div>
+
+        <div class="option brand-option">
+          <div>Brand</div>
+          <div class="dropdown-btn">
+            <i class="fas fa-angle-down"></i>
+          </div>
+        </div>
+
+        <div class="option gender-option">
+          <div>Gender</div>
+          <div class="dropdown-btn">
+            <i class="fas fa-angle-down"></i>
+          </div>
+        </div>
+        <div class="sub-option male-sub-option">Male</div>
+        <div class="sub-option female-sub-option">Female</div>
+
+        <div class="option rating-option">
+          <div>Rating</div>
+          <div class="dropdown-btn">
+            <i class="fas fa-angle-down"></i>
+          </div>
+        </div>
+        <div class="sub-option rating-sub-option" data-id="1">above 1</div>
+        <div class="sub-option rating-sub-option" data-id="2">above 2</div>
+        <div class="sub-option rating-sub-option" data-id="3">above 3</div>
+        <div class="sub-option rating-sub-option" data-id="4">above 4</div>
+        <!-- <div class="sub-option rating-sub-option">above 5</div> -->
+      </div>
+      <div id="product_container"></div>
+    </div>
+
+    <div id="buttons_div">
+      <button class="pagination_btn" data-id="1">1</button>
+      <button class="pagination_btn" data-id="2">2</button>
+      <button class="pagination_btn" data-id="3">3</button>
+      <button class="pagination_btn" data-id="4">4</button>
+      <button class="pagination_btn" data-id="5">5</button>
+      <button class="pagination_btn" data-id="6">6</button>
+    </div>
+  </body>
   <script src="./scripts/index.js"></script>
+  <script src="./scripts/home.js"></script>
+  <script src="./scripts//filtering.js"></script>
 </html>
