@@ -1,0 +1,181 @@
+/* parent container is here */
+#main-container {
+  /* border: 2px solid red; */
+  position: relative;
+  left: 90px;
+  margin-top: 200px;
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+}
+#main-container > div:nth-child(2) {
+  /* border: 2px solid blue; */
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  width: 84%;
+}
+
+/* product container style is here */
+#product_container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+}
+#product_container > .card {
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid red; */
+  padding: 9px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  font-family: sans-serif;
+  color: rgb(69, 56, 56);
+}
+
+#product_container > .card:hover {
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  cursor: pointer;
+}
+#product_container > .card .img_div {
+  width: 90%;
+  height: 200px;
+  /* border: 2px solid darkred; */
+  margin: auto;
+}
+
+#product_container > .card .img_div img {
+  width: 100%;
+  height: 100%;
+}
+#product_container > .card .card_content .ratingDiv {
+  display: flex;
+  /* justify-content: center; */
+  height: 40px;
+  align-items: center;
+  /* border: 2px solid darkgray; */
+}
+#product_container > .card .card_content .ratingDiv div {
+  width: 30%;
+  /* border: 2px solid black; */
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+#product_container > .card .card_content .ratingDiv .ratingImgDiv {
+  width: 40%;
+  height: 100%;
+}
+#product_container > .card .card_content .ratingDiv .ratingImgDiv img {
+  width: 80%;
+  height: 100%;
+}
+#product_container > .card .card_content .ratingDiv div:nth-child(1) p {
+  margin: auto;
+  /* border: 1px solid red; */
+}
+
+/*Add To Cart button*/
+#add_to_cart_button {
+  display: block;
+  margin: auto;
+  background-color: rgb(234, 225, 242);
+  color: rgb(184, 0, 98);
+  border: none;
+  /* border: 1px solid black; */
+  width: 100px;
+  height: 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+#add_to_cart_button:hover {
+  background-color: deeppink;
+  color: white;
+}
+
+/* cart data updater is here */
+#cart_total_quanity_updater {
+  font-weight: bold;
+  color: deeppink;
+}
+.cart_data_after_addition {
+  width: 25px;
+  height: 25px;
+  /* border: 1px solid black; */
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  border-radius: 50%;
+}
+
+/* pagination buttons are here */
+#buttons_div {
+  /* border: 2px solid red; */
+  width: 45%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#buttons_div .pagination_btn {
+  width: 70px;
+  height: 25px;
+  background-color: #ffd4ef;
+  display: block;
+  /* border: 0.5px solid black; */
+  color: black;
+  font-family: sans-serif;
+  font-weight: bold;
+  border-radius: 5px;
+}
+#buttons_div .pagination_btn:hover {
+  color: rgb(8, 6, 6);
+}
+/* Style for the container div */
+.options-container {
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  height: 100%;
+}
+
+/* Style for the option divs */
+.option {
+  cursor: pointer;
+  padding: 5px;
+  margin: 5px;
+  background-color: rgb(253, 226, 240);
+  border-radius: 5px;
+  color: rgb(34, 28, 31);
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+/* Style for the sub-option divs */
+.sub-option {
+  display: none;
+  padding: 5px;
+  margin: 5px;
+  background-color: rgba(255, 251, 251, 0.893);
+  border-radius: 5px;
+  color: rgb(49, 49, 49);
+  font-weight: 400;
+  font-family: sans-serif;
+}
+.sub-option:hover {
+  background-color: rgb(254, 234, 255);
+  cursor: pointer;
+  color: deeppink;
+}
+
+/* dropdown button part is here */
+.option {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 5px;
+  margin-top: 10px;
+}
