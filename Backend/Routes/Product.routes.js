@@ -6,8 +6,6 @@ productRouter.use(express.json());
 //getting with category
 productRouter.get("/", async (req, res) => {
   let query = req.query;
-  let limit = Infinity;
-  let skipCount = 0;
   try {
     const data = await ProductModel.find(query).limit(15);
     res.send(data);
