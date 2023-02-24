@@ -1,0 +1,128 @@
+/* navbar section is here */
+.navbar {
+  /* border: 2px solid red; */
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  display: flex;
+  justify-content: space-around;
+  height: 70px;
+  align-items: center;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.navbar .logo {
+  font-size: 35px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.navbar .logo img {
+  width: 62px;
+}
+/* .navbar .logo img {
+          width: 100%;
+        } */
+.navbar > div {
+  width: 30%;
+  /* border: 2px solid yellow; */
+}
+
+.checkout-progress {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.checkout-progress li {
+  font-size: 12px;
+  font-weight: bold;
+  color: #888;
+  text-transform: uppercase;
+  flex: 1;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.checkout-progress li.active {
+  color: #fff;
+}
+
+.checkout-progress li.active .progress-number {
+  background-color: #ef3291;
+  color: #fff;
+}
+
+.checkout-progress li .progress-number {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #ddd;
+  color: #fff;
+  z-index: 2;
+}
+
+.checkout-progress li .progress-label {
+  margin-top: 8px;
+  z-index: 2;
+}
+
+.progress-bar {
+  position: absolute;
+  height: 5px;
+  width: 200px;
+  top: 20px;
+  left: 200px;
+  width: 0;
+  height: 5px;
+  color: pink;
+  z-index: 0;
+}
+.line-bar {
+  height: 3px;
+  width: 250px;
+  background-color: #ddd;
+  position: absolute;
+  left: 465px;
+  top: 23px;
+}
+.line-bar-two {
+  height: 3px;
+  width: 70px;
+  background-color: #ef3291;
+  position: absolute;
+  left: 463px;
+  top: 23px;
+}
+.line-bar {
+  /* background-color: pink; */
+}
+#second {
+  background-color: #ef3291;
+}
+.stage-name {
+  display: flex;
+  border: 2px solid red;
+  justify-content: space-around;
+  font-family: sans-serif;
+  color: #ddd;
+}
+.stage-name > div:nth-child(2) {
+  padding-left: 25px;
+}
+#cart {
+  color: #ef3291;
+  font-weight: bold;
+}
+#address {
+  color: #ef3291;
+  font-weight: bold;
+}

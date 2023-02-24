@@ -1,3 +1,57 @@
+// navbar section are here
+let body = document.querySelector("body");
+let mobileBtn = document.querySelector(".mobile");
+let appDownloadOption = document.querySelector(".app-download-option");
+mobileBtn.addEventListener("mouseover", () => {
+  appDownloadOption.style.display = "grid";
+  mainDropdownSection.style.display = "none";
+  userProfileDropdown.style.display = "none";
+});
+
+//user profile drowpdown section
+let userProfileBtn = document.querySelector(".user-profile");
+let userProfileDropdown = document.querySelector(".user-profile-option");
+
+userProfileBtn.addEventListener("mouseover", () => {
+  userProfileDropdown.style.display = "grid";
+  mainDropdownSection.style.display = "none";
+  mainDropdownSection.style.display = "none";
+  appDownloadOption.style.display = "none";
+});
+body.addEventListener("click", () => {
+  appDownloadOption.style.display = "none";
+  userProfileDropdown.style.display = "none";
+  mainDropdownSection.style.display = "none";
+});
+
+//main dropdown section is here
+let mainDropdownSection = document.querySelector(".drowpdown-content-parent");
+let mainDropdownSectionBtn = document.querySelectorAll(".second-navbar-option");
+mainDropdownSectionBtn.forEach((btn, index) => {
+  btn.addEventListener("mouseenter", () => {
+    mainDropdownSection.style.display = "flex";
+    appDownloadOption.style.display = "none";
+    userProfileDropdown.style.display = "none";
+  });
+});
+
+//become a supplier part
+let becomeASupplierBtn = document.querySelector(".become-a-supplier");
+becomeASupplierBtn.addEventListener("mouseover", () => {
+  appDownloadOption.style.display = "none";
+  userProfileDropdown.style.display = "none";
+  mainDropdownSection.style.display = "none";
+});
+
+//cart part
+let cartBtn = document.querySelector(".cart");
+cartBtn.addEventListener("mouseover", () => {
+  appDownloadOption.style.display = "none";
+  userProfileDropdown.style.display = "none";
+  mainDropdownSection.style.display = "none";
+});
+
+/*<><><><><><><><><><><><><><><><><><><><><><><><> */
 /*<><><><><><><><><><><><><><><><><><><><><> */
 // main url
 const url = "http://localhost:4000/product";
@@ -120,7 +174,7 @@ subOptions.forEach((subOption) => {
 
 let arr = [];
 window.addEventListener("load", () => {
-  fetch(url)
+  fetch(`${url}/saree`)
     .then((res) => {
       return res.json();
     })
@@ -254,29 +308,29 @@ function appendToDom(arr) {
 //fetching by query that is the filter functionality
 /*<><><><><><><><><><><><><><><><><><><><><><><><> */
 
-const category_sub_option = document.querySelectorAll(".category_sub_option");
-category_sub_option.forEach((element) => {
-  element.addEventListener("click", () => {
-    let data_category = element.getAttribute("data-category");
-    fetchWithQueryFunction(data_category);
-  });
-});
+// const category_sub_option = document.querySelectorAll(".category_sub_option");
+// category_sub_option.forEach((element) => {
+//   element.addEventListener("click", () => {
+//     let data_category = element.getAttribute("data-category");
+//     fetchWithQueryFunction(data_category);
+//   });
+// });
 
-function fetchWithQueryFunction(query) {
-  debugger;
-  console.log(`${url}?category=${query}`);
-  fetch(`${url}?category=${query}`)
-    .then((res) => {
-      return res.json();
-    })
-    .then((res) => {
-      console.log(res);
-      appendToDom(res);
-    })
-    .catch((err) => {
-      console.log("something went wrong :", err);
-    });
-}
+// function fetchWithQueryFunction(query) {
+//   debugger;
+//   console.log(`${url}?category=${query}`);
+//   fetch(`${url}?category=${query}`)
+//     .then((res) => {
+//       return res.json();
+//     })
+//     .then((res) => {
+//       console.log(res);
+//       appendToDom(res);
+//     })
+//     .catch((err) => {
+//       console.log("something went wrong :", err);
+//     });
+// }
 
 /*<><><><><><><><><><><><><><><><><> */
 /*fetching according to the price  */
@@ -291,7 +345,7 @@ priceSubOption.forEach((el) => {
 
 function fetchWithPriceFunction(data_price, query) {
   console.log("This is the url :" + `${url}?${query}=${data_price}`);
-  fetch(`${url}/price?${query}=${data_price}`)
+  fetch(`${url}/saree?${query}=${data_price}`)
     .then((res) => {
       return res.json();
     })
@@ -300,7 +354,10 @@ function fetchWithPriceFunction(data_price, query) {
       appendToDom(res);
     })
     .catch((err) => {
-      console.log("something went wrong :", err);
+      console.log(
+        "something went wrong from filtering from price in saree :",
+        err
+      );
     });
 }
 
@@ -335,7 +392,7 @@ paginationBtns.forEach((paginationBtn) => {
 });
 
 function pagination(page_no) {
-  fetch(`${url}/pagination?page=${page_no}`)
+  fetch(`${url}/saree/pagination?page=${page_no}`)
     .then((res) => {
       return res.json();
     })
@@ -345,6 +402,8 @@ function pagination(page_no) {
       appendToDom(arr);
     })
     .catch((err) => {
-      console.log("Some error in fetching data while pagination !!");
+      console.log(
+        "Some error in fetching data while pagination in saree data!!"
+      );
     });
 }
