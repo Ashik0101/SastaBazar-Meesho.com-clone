@@ -21,19 +21,15 @@
           <ul class="checkout-progress">
             <li class="active">
               <div class="progress-number one">1</div>
-              <!-- <div class="progress-label">Cart</div> -->
             </li>
             <li>
               <div class="progress-number second" id="second">2</div>
-              <!-- <div class="progress-label">Payment Method</div> -->
             </li>
             <li>
               <div class="progress-number">3</div>
-              <!-- <div class="progress-label">Review Order</div> -->
             </li>
             <li>
               <div class="progress-number">4</div>
-              <!-- <div class="progress-label">Confirmation</div> -->
             </li>
           </ul>
         </div>
@@ -49,6 +45,98 @@
       </div>
       <div></div>
     </nav>
+
+    <!-- body thins are from here -->
+    <div id="signup-container">
+      <div class="signup-input-container">
+        <h2 class="signup-text">Save Address</h2>
+        <h3 class="contact-details">Contact Details :</h3>
+        <!-- <br /> -->
+        <form id="form">
+          <br />
+          <div class="inputField">
+            <input type="tel" placeholder=" " id="mobile" required />
+            <span>* Mobile Number</span>
+          </div>
+          <!-- <br /> -->
+
+          <h3 class="contact-details">Address :</h3>
+          <br />
+          <div class="inputField">
+            <input type="tel" placeholder=" " id="house_no" required />
+            <span>* House no./Building Name</span>
+          </div>
+          <!-- <br /> -->
+          <!-- <br /> -->
+          <div class="inputField">
+            <input type="tel" placeholder=" " id="area" required />
+            <span>* Road Name/Area/Colony</span>
+          </div>
+          <!-- <br />
+          <br /> -->
+          <div class="inputField">
+            <input type="number" placeholder=" " id="pincode" required />
+            <span>* Pincode</span>
+          </div>
+          <!-- <br />
+          <br /> -->
+          <div class="inputField">
+            <input type="text" placeholder=" " id="city" required />
+            <span>* City</span>
+          </div>
+          <!-- <br />
+          <br /> -->
+          <div class="inputField">
+            <input type="text" placeholder=" " id="state" required />
+            <span>* State</span>
+          </div>
+          <!-- <br />
+          <br /> -->
+          <div class="inputField">
+            <input type="text" placeholder=" " id="optional" required />
+            <span>* Nearby Location(Optional)</span>
+          </div>
+          <br />
+          <div class="">
+            <button class="submit-address-button">Save Address</button>
+          </div>
+          <br /><br />
+        </form>
+
+        <br />
+        <p class="meesho-privacy-policy-warning">
+          By continuing, you agree to Sasta Bazar's
+          <a href="#" class="termsconditions">Terms & Conditions</a> and
+          <a href="#" class="privacypolicy">Privacy Policy</a>
+        </p>
+      </div>
+
+      <div class="address-shower-area">
+        <div class="price-details">
+          <div>
+            <div>Total Product Price :</div>
+            <div>Rs. <span id="product_price">0</span></div>
+          </div>
+
+          <div>
+            <div>Order Total :</div>
+            <div>Rs. <span id="total_net_price">0</span></div>
+          </div>
+        </div>
+        <div class="delivery-details">
+          <div>Delivery Address</div>
+          <div>
+            <p>Mobile No. :<span> 9128264087</span></p>
+            <p>Building No/House No. :<span> 1520Ac5</span></p>
+            <p>Road Name/Area/Colony. :<span> NH50a</span></p>
+            <p>City :<span> Hazaribagh</span></p>
+            <p>State :<span> Jharkhand</span></p>
+            <p>Nearby Location(Optional) :<span> Jhinjhria Pool, Hzb</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./scripts/address.js"></script>
   </body>
   <script src="./scripts/cart.js"></script>
 </html>

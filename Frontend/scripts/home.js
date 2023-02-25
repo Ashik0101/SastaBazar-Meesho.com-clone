@@ -158,6 +158,7 @@ function totalCartDataUpdater(localData) {
 totalCartDataUpdater(localData);
 
 //append to dom function is here
+let token = localStorage.getItem("token") || null;
 function appendToDom(arr) {
   product_container.innerHTML = null;
   if (arr.length) {
@@ -211,6 +212,13 @@ function appendToDom(arr) {
         addToCartButton.innerText = "Go To Cart";
         addToCartButton.style.backgroundColor = "#76FF03";
         addToCartButton.style.color = "#212121";
+        addToCartButton.addEventListener("click", () => {
+          if (token) {
+            window.open("./cart.html");
+          } else {
+            window.open("./signup.html");
+          }
+        });
       } else {
         addToCartButton.innerText = "Add To Cart";
       }
@@ -224,7 +232,7 @@ function appendToDom(arr) {
           }
         }
         if (flag === true) {
-          alert("Product Already in the Cart !");
+          // alert("Product Already in the Cart !");
           appendToDom(arr);
         } else {
           localData.push({ ...element, quantity: 1 });

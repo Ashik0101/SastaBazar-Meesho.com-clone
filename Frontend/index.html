@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Home Page</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
@@ -15,7 +15,11 @@
   <body>
     <nav>
       <div class="logo">
-        <a href="./index.html">Sasta Bazar</a>
+        <a href="./index.html"
+          ><img
+            src="https://is1-ssl.mzstatic.com/image/thumb/Purple125/v4/89/07/75/89077571-75f4-c262-4225-46c78bbfd988/source/512x512bb.jpg"
+            alt=""
+        /></a>
       </div>
       <div class="search-box">
         <i class="fas fa-search"></i>
@@ -32,11 +36,11 @@
       </div>
       <div class="user-profile">
         <i class="fas fa-user"></i>
-        <span>John Doe</span>
+        <span id="name-shower">John Doe</span>
       </div>
 
       <div class="cart">
-        <a href="#">
+        <a href="./cart.html">
           <i class="fas fa-shopping-cart"></i>
           <span id="cart_total_quanity_updater"></span>
         </a>
@@ -60,13 +64,13 @@
     <!-- app download option on hovering is here -->
     <div class="app-download-option appdownloadoption">
       <div>Download from a</div>
-      <div>
+      <div id="play-store">
         <img
           src="https://images.meesho.com/images/pow/playstore-icon-big.webp"
           alt=""
         />
       </div>
-      <div>
+      <div id="app-store">
         <img
           src="https://images.meesho.com/images/pow/appstore-icon-big.webp"
           alt=""
@@ -86,7 +90,7 @@
         </div>
         <div>
           <div>Hello,</div>
-          <span> User</span>
+          <span id="hello-user-part"> User</span>
         </div>
       </div>
 
@@ -98,7 +102,7 @@
             alt=""
           />
         </div>
-        <div><span>My Orders</span></div>
+        <div id="my-orders-option"><span>My Orders</span></div>
       </div>
       <div class="logout-div">
         <div>
@@ -108,7 +112,7 @@
             alt=""
           />
         </div>
-        <div><span>Logout</span></div>
+        <div id="logout-button"><span>Logout</span></div>
       </div>
     </div>
 
