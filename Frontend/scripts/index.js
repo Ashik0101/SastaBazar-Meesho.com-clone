@@ -49,3 +49,62 @@ cartBtn.addEventListener("mouseover", () => {
   userProfileDropdown.style.display = "none";
   mainDropdownSection.style.display = "none";
 });
+
+// name shower part is here && hello user part
+
+function showUser() {
+  let nameShower = document.getElementById("name-shower");
+  let helloUserPart = document.getElementById("hello-user-part");
+  let userName = localStorage.getItem("userName") || "";
+  if (userName.length) {
+    nameShower.innerText = userName.substring(0, 9) + ".";
+    helloUserPart.innerText = userName.substring(0, 6);
+  } else {
+    nameShower.innerText = "";
+    helloUserPart.innerText = "User";
+  }
+}
+showUser();
+//clicking on cart option is here
+let cartOptionBtn = document.querySelector(".cart");
+
+cartOptionBtn.addEventListener("click", () => {
+  let token = localStorage.getItem("token") || null;
+  if (token) {
+    window.open("./cart.html");
+  } else {
+    window.open("./signup.html");
+  }
+});
+
+//downloading app from playstore and appstore
+let playstore = document.getElementById("play-store");
+let appstore = document.getElementById("app-store");
+playstore.addEventListener("click", () => {
+  window.open(
+    "https://play.google.com/store/apps/details?id=com.meesho.supply&pid=pow_website&c=pow"
+  );
+});
+
+appstore.addEventListener("click", () => {
+  window.open("https://apps.apple.com/us/app/meesho/id1457958492");
+  console.log("btn clicked");
+});
+
+//logout options and my Order options are here
+let myOrderOption = document.getElementById("my-orders-option");
+let logoutButton = document.getElementById("logout-button");
+
+myOrderOption.addEventListener("click", () => {
+  let token = localStorage.getItem("token") || null;
+  if (token) {
+    window.open("./cart.html");
+  } else {
+    window.open("./signup.html");
+  }
+});
+logoutButton.addEventListener("click", () => {
+  localStorage.removeItem("token");
+  localStorage.removeItem("userName");
+  showUser();
+});

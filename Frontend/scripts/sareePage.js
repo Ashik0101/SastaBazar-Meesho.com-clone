@@ -407,3 +407,22 @@ function pagination(page_no) {
       );
     });
 }
+// name shower part is here
+let nameShower = document.getElementById("name-shower");
+let userName = localStorage.getItem("userName") || "";
+if (userName.length) {
+  nameShower.innerText = userName.substring(0, 7);
+} else {
+  nameShower.innerText = "userName";
+}
+
+//clicking on cart option is here
+let cartOptionBtn = document.querySelector(".cart");
+let token = localStorage.getItem("token") || null;
+cartOptionBtn.addEventListener("click", () => {
+  if (token) {
+    window.open("./cart.html");
+  } else {
+    window.open("./signup.html");
+  }
+});

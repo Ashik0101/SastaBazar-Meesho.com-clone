@@ -21,6 +21,9 @@ nav {
   text-transform: uppercase;
   text-decoration: none;
 }
+.logo img {
+  width: 60px;
+}
 
 .nav-links {
   display: flex;

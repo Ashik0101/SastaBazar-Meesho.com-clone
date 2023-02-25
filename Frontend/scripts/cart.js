@@ -15,7 +15,10 @@ function totalUpdater(arr) {
   totalProductPrice.innerText = totalPrice;
   totalNetPrice.innerText = totalPrice;
 }
-totalUpdater(cartData);
+if (cartData.length) {
+  totalUpdater(cartData);
+}
+
 console.log(container);
 function appendToCartDom(arr) {
   container.innerText = null;
