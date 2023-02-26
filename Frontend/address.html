@@ -10,7 +10,7 @@
   <body>
     <nav class="navbar">
       <div class="logo">
-        <a href="#"
+        <a href="./index.html"
           ><img
             src="https://is1-ssl.mzstatic.com/image/thumb/Purple125/v4/89/07/75/89077571-75f4-c262-4225-46c78bbfd988/source/512x512bb.jpg"
             alt=""
@@ -93,7 +93,7 @@
           <!-- <br />
           <br /> -->
           <div class="inputField">
-            <input type="text" placeholder=" " id="optional" required />
+            <input type="text" placeholder=" " id="optional" />
             <span>* Nearby Location(Optional)</span>
           </div>
           <br />
@@ -126,12 +126,28 @@
         <div class="delivery-details">
           <div>Delivery Address</div>
           <div>
-            <p>Mobile No. :<span> 9128264087</span></p>
-            <p>Building No/House No. :<span> 1520Ac5</span></p>
-            <p>Road Name/Area/Colony. :<span> NH50a</span></p>
-            <p>City :<span> Hazaribagh</span></p>
-            <p>State :<span> Jharkhand</span></p>
-            <p>Nearby Location(Optional) :<span> Jhinjhria Pool, Hzb</span></p>
+            <p>
+              Mobile No. :<span id="address-mobile-shower"> 9128264087</span>
+            </p>
+            <p>
+              Building No/House No. :<span id="address-house-shower">
+                1520Ac5</span
+              >
+            </p>
+            <p>Pincode :<span id="address-pincode-shower"> 815314</span></p>
+            <p>
+              Road Name/Area/Colony. :<span id="address-area-shower">
+                NH50a</span
+              >
+            </p>
+            <p>City :<span id="address-city-shower"> Hazaribagh</span></p>
+            <p>State :<span id="address-state-shower"> Jharkhand</span></p>
+            <p>
+              Nearby Location(Optional) :<span id="address-optional-shower">
+                Jhinjhria Pool, Hzb</span
+              >
+            </p>
+            <button id="deliver-to-address">Deliver To This Address</button>
           </div>
         </div>
       </div>

@@ -214,9 +214,9 @@ function appendToDom(arr) {
         addToCartButton.style.color = "#212121";
         addToCartButton.addEventListener("click", () => {
           if (token) {
-            window.open("./cart.html");
+            window.location.href = "./cart.html";
           } else {
-            window.open("./signup.html");
+            window.location.href = "./signup.html";
           }
         });
       } else {

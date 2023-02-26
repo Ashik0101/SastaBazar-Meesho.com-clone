@@ -87,18 +87,18 @@
 }
 .line-bar {
   height: 3px;
-  width: 250px;
+  width: 325px;
   background-color: #ddd;
   position: absolute;
-  left: 465px;
+  left: 533px;
   top: 23px;
 }
 .line-bar-two {
   height: 3px;
-  width: 70px;
+  width: 110px;
   background-color: #ef3291;
   position: absolute;
-  left: 463px;
+  left: 533px;
   top: 23px;
 }
 
@@ -107,7 +107,7 @@
 }
 .stage-name {
   display: flex;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   justify-content: space-around;
   font-family: sans-serif;
   color: #ddd;
@@ -126,11 +126,6 @@
 
 /* body section is from here */
 
-/* img {
-  width: 100%;
-  height: 200px;
-  margin: auto;
-} */
 .signin-button {
   width: 90%;
   max-width: 100%;
@@ -173,7 +168,7 @@
   height: 150px;
 }
 #signup-container > div:nth-child(2) > div:nth-child(2) {
-  height: 350px;
+  height: 250px;
 }
 .signup-image-section {
   height: 250px;
@@ -193,7 +188,7 @@
 .inputField {
   position: relative;
   width: 100%;
-  font-size: 18px;
+  font-size: 15px;
   color: rgb(255, 0, 119);
   font-family: sans-serif;
   border-bottom: 0.5px solid rgb(194, 108, 122);
@@ -209,7 +204,7 @@
   border: none;
   width: 90%;
   color: black;
-  font-size: 20px;
+  font-size: 15px;
   color: rgb(54, 38, 46);
 }
 
@@ -327,12 +322,19 @@ a {
 
 /* delivery details are here */
 .delivery-details {
-  border: 2px solid orange;
+  /* border: 2px solid rgb(0, 0, 0); */
   display: none;
-  display: block;
+  /* display: block; */
   padding-bottom: 8px;
-}
 
+  height: 300px;
+}
+.delivery-details div:nth-child(2) {
+  line-height: 8px;
+}
+.delivery-details div:nth-child(2) button {
+  cursor: pointer;
+}
 .delivery-details > div:nth-child(2) {
   /* border: 2px solid rgb(47, 255, 0); */
   padding-left: 32px;
@@ -349,4 +351,19 @@ a {
   font-size: 15px;
   font-weight: bold;
   font-family: sans-serif;
+}
+
+#deliver-to-address {
+  width: 50%;
+  height: 25px;
+  border: none;
+  background-color: deeppink;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  /* font-weight: bold; */
+  padding: 2px;
+}
+#deliver-to-address:hover {
+  background-color: #bc0b63;
 }

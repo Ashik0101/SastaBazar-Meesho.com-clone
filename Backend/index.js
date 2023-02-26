@@ -4,7 +4,9 @@ const { connection } = require("./config/db");
 const { ProductModel } = require("./Models/Products.model");
 const { productRouter } = require("./Routes/Product.routes");
 const { sareeRouter } = require("./Routes/Saree.routes");
-let { userRouter } = require("./Routes/User.routes");
+const { userRouter } = require("./Routes/User.routes");
+const { addressRouter } = require("./Routes/Address.routes");
+const { authenticate } = require("./Middlewares/authenticate");
 const app = express();
 app.use(express.json());
 app.use(cors());
@@ -12,6 +14,9 @@ app.use(cors());
 app.use("/product", productRouter);
 app.use("/product", sareeRouter);
 app.use("/user", userRouter);
+
+app.use(authenticate);
+app.use("/address", addressRouter);
 app.listen(process.env.PORT, async () => {
   try {
     await connection;

@@ -10,7 +10,7 @@
   <body>
     <nav class="navbar">
       <div class="logo">
-        <a href="#"
+        <a href="./index.html"
           ><img
             src="https://is1-ssl.mzstatic.com/image/thumb/Purple125/v4/89/07/75/89077571-75f4-c262-4225-46c78bbfd988/source/512x512bb.jpg"
             alt=""
@@ -21,19 +21,15 @@
           <ul class="checkout-progress">
             <li class="active">
               <div class="progress-number one">1</div>
-              <!-- <div class="progress-label">Cart</div> -->
             </li>
             <li>
               <div class="progress-number second" id="second">2</div>
-              <!-- <div class="progress-label">Payment Method</div> -->
             </li>
             <li>
               <div class="progress-number third" id="third">3</div>
-              <!-- <div class="progress-label">Review Order</div> -->
             </li>
             <li>
               <div class="progress-number">4</div>
-              <!-- <div class="progress-label">Confirmation</div> -->
             </li>
           </ul>
         </div>
@@ -44,11 +40,94 @@
           <div id="cart">Cart</div>
           <div id="address">Address</div>
           <div id="payment">Payment</div>
-          <div id="summary">Summary</div>
+          <div id="summary">Review</div>
         </div>
       </div>
       <div></div>
     </nav>
+
+    <!-- body part is here -->
+    <div class="parent-container">
+      <div class="heading">
+        <div class="cart-total">Payment Method</div>
+        <div class="price-total">Price Details</div>
+      </div>
+      <div class="body-content">
+        <div id="product-body-content">
+          <div class="payment-options">
+            <div>
+              <input type="radio" id="phonepe" name="group" value="phonepe" />
+            </div>
+            <div>
+              <img src="./image/phonepe.png" alt="" />
+            </div>
+          </div>
+          <div class="payment-options">
+            <div>
+              <input type="radio" id="paytm" name="group" value="paytm" />
+            </div>
+            <div>
+              <img src="./image/Paytm-Logo.wine.png" alt="" />
+            </div>
+          </div>
+          <div class="payment-options">
+            <div>
+              <input type="radio" id="afterpay" name="group" value="afterpay" />
+            </div>
+            <div>
+              <img src="./image/afterpay.png" alt="" />
+            </div>
+          </div>
+          <div class="payment-options">
+            <div>
+              <input type="radio" id="gpay" name="group" value="gpay" />
+            </div>
+            <div>
+              <img src="./image/gpay.jpeg" alt="" />
+            </div>
+          </div>
+          <div class="payment-options">
+            <div>
+              <input type="radio" id="paypal" name="group" value="paypal" />
+            </div>
+            <div>
+              <img src="./image/paypal.png" alt="" />
+            </div>
+          </div>
+          <div class="payment-options">
+            <div>
+              <input type="radio" id="cod" name="group" value="cod" />
+            </div>
+            <div>
+              <img src="./image/cod.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="price-details">
+          <div>
+            <div>Total Product Price :</div>
+            <div>Rs. <span id="product_price">0</span></div>
+          </div>
+
+          <div>
+            <div>Order Total :</div>
+            <div>Rs. <span id="total_net_price">0</span></div>
+          </div>
+
+          <div>
+            <div>Clicking on ‘Continue’ will not deduct any money</div>
+            <button id="continue-btn">Continue</button>
+          </div>
+
+          <div>
+            <img
+              src="https://images.meesho.com/images/marketing/1588578650850.webp"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
-  <script src="./scripts/cart.js"></script>
+  <script src="./scripts/payment.js"></script>
 </html>

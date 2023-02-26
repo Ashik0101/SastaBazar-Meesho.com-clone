@@ -75,7 +75,7 @@ img {
 .inputField {
   position: relative;
   width: 100%;
-  font-size: 18px;
+  font-size: 14px;
   color: deeppink;
   font-family: sans-serif;
   border-bottom: 0.5px solid rgb(194, 108, 122);
@@ -91,7 +91,7 @@ img {
   border: none;
   width: 90%;
   color: black;
-  font-size: 20px;
+  font-size: 15px;
   color: rgb(54, 38, 46);
 }
 

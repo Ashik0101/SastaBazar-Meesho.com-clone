@@ -12,7 +12,7 @@ userRouter.post("/register", async (req, res) => {
   try {
     const user = await UserModel.find({ email });
     if (user.length) {
-      res.send({ msg: "User is Already Registered!!!", flag: true });
+      res.send({ msg: "User Already Exists!!", flag: true });
     } else {
       bcrypt.hash(password, 6, (err, encrypted) => {
         if (encrypted) {
@@ -24,7 +24,7 @@ userRouter.post("/register", async (req, res) => {
           });
           data.save();
           console.log(encrypted);
-          res.send({ msg: "User Registered Successfully !!", flag: "success" });
+          res.send({ msg: "Registration Successfull !!", flag: "success" });
         } else {
           res.send({ msg: "Some error while encrypting the password!!" });
           console.log("some error while encrypting the password :", err);
@@ -50,7 +50,7 @@ userRouter.post("/login", async (req, res) => {
             process.env.SECRET_KEY
           );
           res.send({
-            msg: "User Logged In Successfully!",
+            msg: "Login Successfull!",
             token: token,
             userName: user[0].name,
           });

@@ -157,7 +157,7 @@ nav {
   align-items: center;
 }
 .second-navbar > div:hover {
-  border-bottom: 1.5px solid deeppink;
+  /* border-bottom: 1.5px solid deeppink; */
 }
 .second-navbar > div a {
   color: #333;
@@ -345,7 +345,7 @@ nav {
 
 /* fashin store banner section */
 .fashion-store-banner {
-  border: 2px solid darkgreen;
+  /* border: 2px solid darkgreen; */
   width: 85%;
   position: relative;
   top: 130px;
@@ -362,7 +362,7 @@ nav {
   position: relative;
   left: 90px;
   top: 160px;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 .start-online-business-banner img {
@@ -373,7 +373,7 @@ nav {
 /* meesho supplier banner */
 .meesho-supplier {
   width: 85%;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   position: relative;
   top: 190px;
 
@@ -386,7 +386,6 @@ nav {
 /* footer part */
 .footer-parent {
   /* border: 2px solid red; */
-
   width: 85%;
   margin: auto;
   display: flex;
@@ -420,11 +419,7 @@ nav {
 }
 
 /* careers-legal-socialmedia */
-.careers-legal-socialmedia {
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* border: 5px solid rgb(43, 255, 0); */
-}
+
 .careers-legal-socialmedia > div {
   /* border: 2px solid yellow; */
 }

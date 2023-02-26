@@ -1,6 +1,7 @@
 /* navbar section is here */
 .navbar {
   /* border: 2px solid red; */
+
   position: fixed;
   top: 0px;
   left: 0px;
@@ -20,9 +21,7 @@
 .navbar .logo img {
   width: 62px;
 }
-/* .navbar .logo img {
-  width: 100%;
-} */
+
 .navbar > div {
   width: 30%;
   /* border: 2px solid yellow; */
@@ -88,16 +87,16 @@
 }
 .line-bar {
   height: 3px;
-  width: 250px;
+  width: 325px;
   background-color: #ddd;
   position: absolute;
-  left: 455px;
+  left: 533px;
   top: 23px;
 }
 
 .stage-name {
   display: flex;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   justify-content: space-around;
   font-family: sans-serif;
   color: #ddd;
@@ -115,7 +114,8 @@
   /* border: 2px solid red; */
   width: 60%;
   margin: auto;
-  margin-top: 70px;
+  margin-top: 71px;
+
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 .parent-container .heading {
@@ -131,7 +131,7 @@
 }
 .parent-container .heading > div {
   text-align: left;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 50%;
   font-size: 22px;
   padding-left: 50px;
@@ -140,12 +140,12 @@
 }
 
 .parent-container .body-content {
-  border: 2px solid orange;
+  /* border: 2px solid orange; */
   display: flex;
   justify-content: space-between;
 }
 .parent-container .body-content .price-details {
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   width: 340px;
   position: fixed;
   left: 50%;
@@ -176,7 +176,7 @@
 .body-content .price-details > div:nth-child(3) > :nth-child(1) {
   font-size: 12px;
   text-align: center;
-  border: 2px solid coral;
+  /* border: 2px solid coral; */
 }
 .body-content .price-details > div:nth-child(3) > #continue-btn {
   display: block;
@@ -201,7 +201,7 @@
 
 /* card section */
 #product-body-content {
-  border: 5px solid black;
+  /* border: 5px solid black; */
   width: 333px;
   margin-top: 45px;
 }
@@ -215,7 +215,7 @@
 }
 .card .img_div {
   width: 35%;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   height: 90px;
 }
 .card .img_div img {
@@ -224,7 +224,7 @@
 }
 .card .card_content {
   width: 60%;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   line-height: 3.1px;
 }
 button {
