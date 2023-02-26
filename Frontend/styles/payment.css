@@ -86,18 +86,18 @@
 }
 .line-bar {
   height: 3px;
-  width: 250px;
+  width: 327px;
   background-color: #ddd;
   position: absolute;
-  left: 463px;
+  left: 539px;
   top: 23px;
 }
 .line-bar-three {
   height: 3px;
-  width: 150px;
+  width: 215px;
   background-color: #ef3291;
   position: absolute;
-  left: 463px;
+  left: 540px;
   top: 23px;
 }
 
@@ -107,7 +107,7 @@
 }
 .stage-name {
   display: flex;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   justify-content: space-around;
   font-family: sans-serif;
   color: #ddd;
@@ -121,4 +121,173 @@
 #payment {
   color: #ef3291;
   font-weight: bold;
+}
+
+/* cart section body parts starts here */
+.parent-container {
+  /* border: 2px solid red; */
+  width: 60%;
+  margin: auto;
+  margin-top: 75px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.parent-container .heading {
+  position: fixed;
+  display: flex;
+  /* border: 2px solid rgba(47, 255, 0, 0.867); */
+  height: 40px;
+  justify-content: space-around;
+  padding-top: 15px;
+  left: 233px;
+  right: 228px;
+  background-color: white;
+}
+.parent-container .heading > div {
+  text-align: left;
+  /* border: 1px solid red; */
+  width: 50%;
+  font-size: 22px;
+  padding-left: 50px;
+  font-weight: bold;
+  letter-spacing: 5;
+  font-family: sans-serif;
+  color: darkslategray;
+}
+
+.parent-container .body-content {
+  /* border: 2px solid orange; */
+  display: flex;
+  justify-content: space-between;
+}
+.parent-container .body-content .price-details {
+  /* border: 2px solid blue; */
+  width: 340px;
+  position: fixed;
+  left: 50%;
+  top: 130px;
+}
+.body-content {
+  font-family: sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+.body-content .price-details > div:nth-child(1),
+.body-content .price-details > div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+.body-content .price-details > div:nth-child(1) {
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgb(211, 197, 184);
+}
+.body-content .price-details > div:nth-child(2) {
+  font-weight: 700;
+}
+.body-content .price-details > div:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+}
+.body-content .price-details > div:nth-child(3) > :nth-child(1) {
+  font-size: 12px;
+  text-align: center;
+  /* border: 2px solid coral; */
+}
+.body-content .price-details > div:nth-child(3) > #continue-btn {
+  display: block;
+  width: 96%;
+  height: 50px;
+  border: none;
+  /* border: 1px solid rgb(0, 0, 0); */
+  border-radius: 10px;
+  background-color: deeppink;
+  margin-top: 17px;
+  font-size: 15px;
+  font-family: sans-serif;
+  color: white;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.body-content .price-details > div:nth-child(3) > #continue-btn:hover {
+  background-color: #ff0080;
+}
+.body-content .price-details > div:nth-child(4) img {
+  width: 100%;
+}
+
+#product-body-content {
+  /* border: 5px solid black; */
+  width: 333px;
+  margin-top: 45px;
+}
+
+#product-body-content .payment-options {
+  height: 55px;
+  /* border: 2px soild red; */
+  margin: 5px;
+  width: 95%;
+  user-select: none;
+}
+#product-body-content .payment-options > div {
+  cursor: pointer;
+}
+#product-body-content .payment-options {
+  display: flex;
+}
+#product-body-content .payment-options div:nth-child(1) {
+  width: 70px;
+  /* border: 2px solid blue; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#product-body-content
+  .payment-options
+  div:nth-child(1)
+  input[type="radio"]:after {
+  width: 25px;
+  height: 25px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #d1d3d1;
+  content: "";
+  display: inline-block;
+  /* visibility: visible; */
+}
+
+#product-body-content
+  .payment-options
+  div:nth-child(1)
+  input[type="radio"]:checked:after {
+  width: 25px;
+  height: 25px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: deeppink;
+  content: "";
+  display: inline-block;
+  /* visibility: visible; */
+}
+
+#product-body-content .payment-options div:nth-child(1) input[type="radio"] {
+  background-color: #ef3291;
+}
+#product-body-content .payment-options div:nth-child(2) {
+  width: 60%;
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+}
+#product-body-content .payment-options img {
+  width: 120px;
+}
+
+.cart-total .price-total {
+  font-weight: bold;
+  font-family: sans-serif;
 }

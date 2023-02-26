@@ -71,9 +71,9 @@ let cartOptionBtn = document.querySelector(".cart");
 cartOptionBtn.addEventListener("click", () => {
   let token = localStorage.getItem("token") || null;
   if (token) {
-    window.open("./cart.html");
+    window.location.href = "./cart.html";
   } else {
-    window.open("./signup.html");
+    window.location.href = "./signup.html";
   }
 });
 
@@ -98,9 +98,9 @@ let logoutButton = document.getElementById("logout-button");
 myOrderOption.addEventListener("click", () => {
   let token = localStorage.getItem("token") || null;
   if (token) {
-    window.open("./cart.html");
+    window.location.href = "./cart.html";
   } else {
-    window.open("./signup.html");
+    window.location.href = "./signup.html";
   }
 });
 logoutButton.addEventListener("click", () => {

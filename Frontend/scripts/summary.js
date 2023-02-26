@@ -92,8 +92,12 @@ function appendToCartDom(arr) {
 appendToCartDom(cartData);
 
 // continue button is here
+let body = document.querySelector("body");
 let continueButton = document.getElementById("continue-btn");
 continueButton.addEventListener("click", () => {
-  // window.open("./address.html");
-  window.location.href = "./address.html";
+  body.innerHTML = `<div class = "after-order-div"><h1>Your Order has been placed. <br> Thank You For Shopping ! </h1> </div>`;
+  //   alert("Your Order has been placed !!");
+  setTimeout(() => {
+    window.open("./index.html");
+  }, 1500);
 });
