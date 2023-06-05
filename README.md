@@ -15,5 +15,8 @@ support. We hope you enjoy using SastaBazar.com and find our platform to be a va
 resource for all your shopping needs. If you have any questions or feedback, please don't
 hesitate to contact us. Thank you for choosing SastaBazar.com!
 
-
+<br/>
+Deployed Link : https://subtle-sprinkles-8f360b.netlify.app/
+<br/>
+Backend Link : https://sore-blue-tadpole-gear.cyclic.app
 
