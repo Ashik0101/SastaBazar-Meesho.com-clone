@@ -1,5 +1,5 @@
 /*<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
-const url = "http://localhost:4000";
+const url = "https://sore-blue-tadpole-gear.cyclic.app";
 /*<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
 
 let saveAddressBtn = document.querySelector(".submit-address-button");

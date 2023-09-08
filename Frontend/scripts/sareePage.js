@@ -54,7 +54,7 @@ cartBtn.addEventListener("mouseover", () => {
 /*<><><><><><><><><><><><><><><><><><><><><><><><> */
 /*<><><><><><><><><><><><><><><><><><><><><> */
 // main url
-const url = "http://localhost:4000/product";
+const url = "https://sore-blue-tadpole-gear.cyclic.app/product";
 /*<><><><><><><><><><><><><><><><><><><><><> */
 // Get all the option and sub-option divs      // Get all the option and sub-option divs
 
