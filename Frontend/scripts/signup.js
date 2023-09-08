@@ -1,5 +1,5 @@
 /*<><><><><><><><><><><><><><><><> */
-let url = "http://localhost:4000";
+let url = "https://sore-blue-tadpole-gear.cyclic.app";
 /*<><><><><><><><><><><><><><><><> */
 let signupButton = document.querySelector(".signup-button");
 signupButton.addEventListener("click", () => {

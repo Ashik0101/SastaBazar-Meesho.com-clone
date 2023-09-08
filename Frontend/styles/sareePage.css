@@ -317,7 +317,7 @@ nav {
 /* Product appending in dom and their styles are from here */
 /* parent container is here */
 #main-container {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   margin: auto;
   margin-top: 110px;
   width: 85%;
